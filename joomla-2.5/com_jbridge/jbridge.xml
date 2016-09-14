@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="2.5.9" method="upgrade">
+
+	<name>COM_JBRIDGE</name>
+	<creationDate>Feb, 19th 2013</creationDate>
+	<author>Idan Ben-Ezra</author>
+	<authorEmail>admin@jetserver.co.il</authorEmail>
+	<authorUrl>http://www.jetserver.co.il</authorUrl>
+	<copyright>Copyright Jetserver Web Services</copyright>
+	<license>License Info</license>
+	<version>1.0.1</version>
+	<description></description>
+
+	<install>
+		<sql>
+			<file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+		</sql>
+	</install>
+	<uninstall>
+		<sql>
+			<file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+		</sql>
+	</uninstall>
+
+	<files folder="site">
+		<filename>index.html</filename>
+		<filename>jbridge.php</filename>
+		<filename>controller.php</filename>
+		<folder>views</folder>
+	</files>
+
+	<administration>
+		<submenu>
+			<menu view="settings">COM_JBRIDGE_SUBMENU_SETTINGS</menu>
+			<menu view="whitelist">COM_JBRIDGE_SUBMENU_WHITELIST</menu>
+		</submenu>
+		<files folder="admin">
+			<filename>index.html</filename>
+			<filename>jbridge.php</filename>
+			<filename>controller.php</filename>
+			<folder>helpers</folder>
+			<folder>controllers</folder>
+			<folder>views</folder>
+			<folder>sql</folder>
+		</files>
+		<languages folder="admin">
+			<language tag="en-GB">language/en-GB/en-GB.com_jbridge.ini</language>
+			<language tag="en-GB">language/en-GB/en-GB.com_jbridge.sys.ini</language>
+		</languages>
+	</administration>
+
+</extension>
+

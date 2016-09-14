@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="system">
+	<name>plg_system_jbridge</name>
+	<author>Idan Ben-Ezra</author>
+	<creationDate>Feb 2013</creationDate>
+	<copyright>Copyright (C) 2013 Jetserver Web Services.</copyright>
+	<license></license>
+	<authorEmail>admin@jetserver.co.il</authorEmail>
+	<authorUrl>www.jetserver.net</authorUrl>
+	<version>1.0.0</version>
+	<description></description>
+	<files>
+		<filename plugin="jbridge">jbridge.php</filename>
+		<filename>index.html</filename>
+	</files>
+	<languages>
+		<language tag="en-GB">language/en-GB/en-GB.plg_system_jbridge.ini</language>
+		<language tag="en-GB">language/en-GB/en-GB.plg_system_jbridge.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="active" type="radio" class="btn-group" default="1" description="PLG_JBRIDGE_ACTIVE_DESC" label="PLG_JBRIDGE_ACTIVE_LABEL">
+					<option value="0">JNo</option>
+					<option value="1">JYes</option>
+				</field>
+				<field name="loginurl" type="text" description="PLG_JBRIDGE_LOGIN_URL_DESC" label="PLG_JBRIDGE_LOGIN_URL_LABEL" />
+				<field name="logouturl" type="text" description="PLG_JBRIDGE_LOGOUT_URL_DESC" label="PLG_JBRIDGE_LOGOUT_URL_LABEL" />
+				<field name="registerurl" type="text" description="PLG_JBRIDGE_REGISTER_URL_DESC" label="PLG_JBRIDGE_REGISTER_URL_LABEL" />
+				<field name="passwordreseturl" type="text" description="PLG_JBRIDGE_PASSWORD_RESET_URL_DESC" label="PLG_JBRIDGE_PASSWORD_RESET_URL_LABEL" />
+				<field name="usernamereminderurl" type="text" description="PLG_JBRIDGE_USERNAME_REMINDER_URL_DESC" label="PLG_JBRIDGE_USERNAME_REMINDER_URL_LABEL" />
+				<field name="editprofileurl" type="text" description="PLG_JBRIDGE_EDIT_PROFILE_URL_DESC" label="PLG_JBRIDGE_EDIT_PROFILE_URL_LABEL" />
+				<field name="userprofileurl" type="text" description="PLG_JBRIDGE_USER_PROFILE_URL_DESC" label="PLG_JBRIDGE_USER_PROFILE_URL_LABEL" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>
